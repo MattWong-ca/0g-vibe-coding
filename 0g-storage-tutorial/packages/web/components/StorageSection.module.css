@@ -1,0 +1,80 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-child { border-bottom: none; }
+
+.heading { font-size: 1.25rem; font-weight: 700; }
+.description { color: var(--muted); font-size: 0.9rem; margin-top: -8px; }
+.hint { color: var(--muted); font-size: 0.9rem; }
+
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 36px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+.dropzone:hover, .over { border-color: var(--accent); background: var(--accent-dim); }
+.icon { font-size: 1.5rem; color: var(--accent); }
+.link { color: var(--accent); }
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.uploading { border-color: var(--accent); color: var(--accent); }
+.done { border-color: var(--success); color: var(--success); }
+.error { border-color: var(--error); color: var(--error); }
+
+.spinner {
+  width: 13px; height: 13px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.fileList { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.fileItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.fileName { font-size: 0.9rem; font-weight: 500; }
+.contentId { font-family: monospace; font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+.txLink { font-size: 0.75rem; color: var(--accent); text-decoration: none; margin-top: 3px; display: inline-block; }
+.txLink:hover { text-decoration: underline; }
+
+.btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }

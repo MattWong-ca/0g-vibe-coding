@@ -1,0 +1,29 @@
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 24px 80px;
+}
+
+/* Landing (no features selected) */
+.landing {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.card { display: flex; flex-direction: column; gap: 28px; max-width: 480px; width: 100%; }
+.title { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.04em; }
+.accent { color: var(--accent); }
+.subtitle { color: var(--muted); font-size: 0.95rem; margin-top: -16px; }
+.steps { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.steps li {
+  display: flex; flex-direction: column; gap: 6px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 14px 16px;
+}
+.label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
+.path { font-family: monospace; font-size: 0.9rem; }
+.links { display: flex; gap: 20px; }
+.links a { font-size: 0.85rem; color: var(--muted); text-decoration: none; transition: color 0.15s; }
+.links a:hover { color: var(--accent); }
