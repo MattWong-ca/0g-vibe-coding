@@ -19,15 +19,15 @@ A web app where users can drag-and-drop a file, upload it to 0G storage, and get
 
 ## Setup
 
-**1. Clone and install**
+**1. Create your app**
 
 ```bash
-git clone <this-repo>
-cd 0g-vibe-coding/0g-storage-tutorial
-npm install
+npx create-0g-app@latest
 ```
 
-> `npm install` automatically runs a post-install patch (`scripts/patch-0g-sdk.js`) that fixes the `@0glabs/0g-ts-sdk` v0.3.3 ABI to match the current Galileo testnet contract. See [SDK patch](#sdk-patch) below.
+Enter a project name when prompted, then select **Storage** from the feature options.
+
+> This scaffolds the project and automatically runs a post-install patch (`scripts/patch-0g-sdk.js`) that fixes the `@0glabs/0g-ts-sdk` v0.3.3 ABI to match the current Galileo testnet contract. See [SDK patch](#sdk-patch) below.
 
 **2. Set your environment variables**
 
@@ -46,6 +46,7 @@ STORAGE_INDEXER_RPC=https://indexer-storage-testnet-turbo.0g.ai
 **3. Run**
 
 ```bash
+cd your-project-name
 npm run dev
 ```
 
