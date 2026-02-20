@@ -1,6 +1,6 @@
 # 0G Storage in 5 mins
 
-Upload files to 0G's decentralized storage network and verify the transaction on the Galileo testnet block explorer — all from a Next.js app.
+Upload files to 0G's decentralized storage network and verify the transaction on the Galileo testnet block explorer — all from a single command: `create-0g-app@latest`
 
 ## What you'll build
 
